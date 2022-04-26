@@ -1,0 +1,259 @@
+
+html {
+    background: url(src/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    height: 100%;
+    font-size: 16px;
+}
+body {
+    margin: 40px;
+    height: 90%;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+/* ------ CSS Header ------ */
+header {
+    height: 50px;
+    width: 120px;
+}
+
+.logo-alura {
+    fill: #0A3871;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    transition: 0.5s all; /* tempo de transição no hover*/
+    cursor: pointer;
+}
+
+.logo-alura:hover {
+    fill: hsl(204, 77%, 54%);
+    transform: scale(1.2);
+}
+
+/* ------ CSS Main ------ */ 
+main {
+    display: flex;
+    width: calc(100% - 120px);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-left: 80px;
+}
+
+/* aside */
+aside {
+    background: #FFFFFF;
+    border-radius: 32px;
+    width: 400px;
+    height: 100%;
+}
+
+.aside-standard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+    justify-content: center;
+    
+    margin: 0 32px;
+    height: 100%;
+    text-align: center;
+}
+
+.image-boy {
+    width: 100%;
+}
+
+.aside-standard-container > p:first-of-type {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #343A40;
+    margin: 40px 0 16px;
+}
+
+.aside-standard-container > p:last-of-type {
+    line-height: 24px;
+    color: #495057;
+}
+
+
+/*input text */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-box{
+    margin: 130px 0 0 0;
+    width: 680px;    
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    
+    resize: none;
+    border: 0 none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background-color: transparent;   
+}
+
+.alert-div-container {
+    display: flex;
+}
+
+.alert-div-container img {
+    margin: 0 10px 0 0;
+}
+
+.alert-div-container p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #495057;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    margin: 16px 0 32px 0;
+}
+
+ul button {
+    background-color: #0A3871;
+    border: none;;
+    border-radius: 24px;
+    padding: 24px;
+    width: 325px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0 16px 0 0;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+ul button[id="button-decrypt"] {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+ul button:hover {
+    transform: scale(1.05);
+}
+
+.result {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.result > p {
+    margin: 32px 32px 30px 32px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #495057;
+    width: 320px;
+    text-align: left;
+    padding-bottom: 100px;
+}
+
+.result > button {
+    margin: 0 32px 32px 32px;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    width: 325px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.result button:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1350px) {
+    header, section {
+        width: auto;
+    }
+    .logo-alura {
+        width: 30px;
+        height: 46px;
+    }
+    main {
+        width: 100%;
+        padding-left: 0px;
+    }
+    aside {
+        margin: 48px 0 40px 0;
+        width: 100%;
+        height: auto;
+        min-height: 133px;
+    }
+
+    .aside-standard-container > p:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    .image-boy {
+       display: none;
+    }
+
+    .text-box{
+        margin: 120px 0 0 0;
+        width: 100%;    
+        line-height: 48px; 
+    }
+    .alert-div-container {
+       width: 100%;
+    }
+    .result > p {
+        margin-bottom: 0px;
+        width: auto;
+        padding-bottom: 0px;
+    }
+    .result > button {
+        margin: 32px;
+        width:auto;
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    ul {
+        justify-content: center;
+        margin: 16px 0 0 0;
+        width: 100%;
+    }
+    ul button {
+        margin: 24px 16px 0 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        margin: 16px;
+    }
+    .text-box{
+        height: auto;
+        max-height: 200px;
+    }
+}
+
