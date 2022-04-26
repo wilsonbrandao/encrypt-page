@@ -1,2 +1,2 @@
 # encrypt-page
-Pagina em html, css e Javascript para criptografar/descriptografar textos
+Pagina em html, css e javascript para criptografar/descriptografar textos
