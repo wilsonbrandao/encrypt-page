@@ -23,9 +23,10 @@ buttonEncrypt.onclick = () => {
         .textContent = "Hmmm, encontrei alguns caracteres especiais, tente retirá-los e criptografar novamente";
         result.style.display = "flex";
    }else {
-       stringEcrypted = stringDencrypted.replace(/a/g, "ai")
+       stringEcrypted = stringDencrypted
        .replace(/e/g, "enter")
        .replace(/i/g, "imes")
+       .replace(/a/g, "ai")
        .replace(/o/g, "ober")
        .replace(/u/g, "ufat");
        divAside.style.display = "none";
